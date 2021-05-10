@@ -19,3 +19,6 @@ $router->get('/', function () use ($router) {
 
 $router->get('/reserva', 'ReController@index');
 $router->get('/reserva/{id}', 'ReController@ver');
+$router->delete('/reserva/{id}', 'ReController@eliminar');
+$router->post('/reserva', 'ReController@guardar');
+$router->post('/reserva/{id}', 'ReController@actualizar');
