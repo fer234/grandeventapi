@@ -11,9 +11,9 @@ class ReController extends Controller{
         return response()->json($datosRe);
     }
 
-    public function ver($id){
+    public function ver($dui){
         $datosRe=new Re;
-        $datosEncontrados=$datosRe->find($id);
+        $datosEncontrados=$datosRe->find($dui);
         return response()->json($datosEncontrados);
     }
 
